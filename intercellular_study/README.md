@@ -75,8 +75,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 		
 	
-	2-4. Make "cell_type" column which would save the cell annotation <br>
-	and subset data by condition ( different exp. condition or batch )
+	2-4. Make "cell_type" column of your Seurat object which would save the cell annotation <br>
+	and make the list of conditions ( different exp. condition or batch )
 	
 
 	```
