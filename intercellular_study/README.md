@@ -53,7 +53,6 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 	if(!dir.exists(OUTDIR_common)) dir.create(OUTDIR_common)
 	OUTDIR %>% lapply(., function(x) if(!dir.exists(x)) dir.create(x))
-
 	```
 	
 
@@ -64,7 +63,6 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	rds_path <- "/xxx/"
 	rds <- c("Seurat_object.RDS")
 	R <- readRDS(paste0( rds_path, rds ))
-
 	```
 
 
@@ -99,13 +97,13 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	conditions %>% str_extract_all(., "[A-Za-z]+\\b") %>% toupper() %>% str_extract_all(., "\\b[A-Za-z]") -> conditions_S2
 	conditions_SS <- paste0(conditions_S1, ".", conditions_S2)
 	```
-	
 	```
-        > conditions
-        [1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE""
-        > conditions_SS
-        [1] "A.H." "A.D." "D.H." "D.D."
-        ```
+	> conditions
+	[1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE""
+	> conditions_SS
+	[1] "A.H." "A.D." "D.H." "D.D."
+	```
+	
 
 
 
@@ -115,10 +113,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 	rds_col <- c()
 	for ( condition in c(conditions)) {
-
         	R <- R[,!R$cell_type %in% remove_celltype ]
         	rds_col[[condition]] <- subset(R, condition == condition )
-	
 	}
 	```
 
