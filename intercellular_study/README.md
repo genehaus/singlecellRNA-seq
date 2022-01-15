@@ -98,6 +98,9 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	conditions %>% str_extract_all(., "\\b[A-Za-z]+") %>% toupper() %>% str_extract_all(., "\\b[A-Za-z]") -> conditions_S1
 	conditions %>% str_extract_all(., "[A-Za-z]+\\b") %>% toupper() %>% str_extract_all(., "\\b[A-Za-z]") -> conditions_S2
 	conditions_SS <- paste0(conditions_S1, ".", conditions_S2)
+	```
+	
+	```
         #  > conditions
         #  [1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE""
         #  > conditions_SS
