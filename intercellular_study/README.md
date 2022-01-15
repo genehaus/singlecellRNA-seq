@@ -1,4 +1,6 @@
-# single cell RNA seq data analysis <br> intercellular communications by cellchat <br> Written by Hyojin Kim <br>  In Jan 2022
+# single cell RNA seq data analysis <br> 
+to study intercellular communications with cellchat <br> 
+Written by Hyojin Kim <br>  In Jan 2022
 
 <br>
 <br>
@@ -93,11 +95,14 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 	2-5. Simplify conditions' name
 
-	# > conditions
-	# [1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE"" 
-	# > conditions_SS
-	# [1] "A.H." "A.D." "D.H." "D.D."
 
+	```
+	 > conditions
+	 [1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE"" 
+	 > conditions_SS
+	 [1] "A.H." "A.D." "D.H." "D.D."
+	```
+	
 
 	```
 	conditions %>% str_extract_all(., "\\b[A-Za-z]+") %>% toupper() %>% str_extract_all(., "\\b[A-Za-z]") -> conditions_S1
