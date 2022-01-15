@@ -83,8 +83,12 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	R$cell_type <- R$olumn_save_cell_annotation %>% as.character() %>% strsplit(., "[: ]") %>% lapply(., function(x) x[3]) %>% unlist()
 	# if your data is coming from Seurat
 	R$cell_type <- R$column_save_cell_annotation
-
-	assay_name <- DefaultAssay(R)
+	
+	# In the case of the DefaultAssay, 
+	# "RNA" from Seurat object is ideal ("originexp" from Scanpy)
+	# It shouldn't be the one from integrated assay
+	assay_name <- DefaultAssay(R) 
+	# 'condition' column hss the exp. condition information in this R object
 	conditions <- R$condition %>% unique() %>% as.character() %>% mixedsort()
 	```
 
