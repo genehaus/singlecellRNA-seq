@@ -101,10 +101,10 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 	
 	```
-        #  > conditions
-        #  [1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE""
-        #  > conditions_SS
-        #  [1] "A.H." "A.D." "D.H." "D.D."
+        > conditions
+        [1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE""
+        > conditions_SS
+        [1] "A.H." "A.D." "D.H." "D.D."
         ```
 
 
