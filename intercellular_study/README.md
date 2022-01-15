@@ -75,7 +75,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 		
 	
-	2-4. add "cell_type" column same as the cell type meta of your object
+	2-4. Make "cell_type" column which would save the cell annotation <br>
+	and subset data by condition ( different exp. condition or batch )
 	
 
 	```
@@ -87,7 +88,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	# In the case of the DefaultAssay, 
 	# "RNA" from Seurat object is ideal ("originexp" from Scanpy)
 	# It shouldn't be the one from integrated assay
-	assay_name <- DefaultAssay(R) 
+	assay_name <- DefaultAssay(R)
+	 
 	# 'condition' column hss the exp. condition information in this R object
 	conditions <- R$condition %>% unique() %>% as.character() %>% mixedsort()
 	```
