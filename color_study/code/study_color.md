@@ -1,6 +1,6 @@
 # To study colors
 
-About "Accent", "Set1", "Set2" and "Set3" of colorRampPalette
+<h3> About "Accent", "Set1", "Set2" and "Set3" of colorRampPalette </h3>
 
 ``` r
 require(dplyr)
@@ -40,7 +40,7 @@ head(D)
 
 
 <br><br><br>
-<h5>To use "Accent" color set </h5>
+<h4>To use "Accent" color set </h4>
 <br>
 
 
@@ -76,7 +76,7 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 <br><br><br>
-<h5>To use "Set1" color set </h5>
+<h4>To use "Set1" color set </h4>
 <br>
 
 
@@ -112,7 +112,7 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 <br><br><br>
-<h5>To use "Set2" color set </h5>
+<h4>To use "Set2" color set </h4>
 <br>
 
 ``` r
@@ -148,7 +148,7 @@ print(p)
 
 
 <br><br><br>
-<h5>To use "Set3" color set </h5>
+<h4>To use "Set3" color set </h4>
 <br>
 
 ``` r
@@ -182,7 +182,7 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 <br><br><br>
-<h5>To use the shuffled "Set2" color set </h5>
+<h4>To use the shuffled "Set2" color set </h4>
 <br>
 
 ``` r
