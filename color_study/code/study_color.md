@@ -217,4 +217,10 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 
+### Acknowledgements
+
+https://r4ds.had.co.nz/r-markdown.html
+
+https://www.markdownguide.org/basic-syntax/
+
 
