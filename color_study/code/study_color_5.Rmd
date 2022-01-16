@@ -1,10 +1,15 @@
-
-
 ---
 title: "R Notebook - color study"
-author : "Hyojin Kim"" 
+author: "Hyojin Kim"" 
 output: rmarkdown::github_document
 ---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "README_figs/README-"
+)
+```
+
 
 
 ```{r}
@@ -50,14 +55,12 @@ show_col(colourSet)
 ```
 
 ```{r}
-p <- ggplot(D, aes(x=x, y=y, color=group) ) +
+ggplot(D, aes(x=x, y=y, color=group) ) +
                   scale_color_manual(values=colourSet) +
                   geom_point(size=1, alpha=0.6) +
                   labs(title = "Accent") +        
                   theme_classic()
 
-
-print(p)
 ```
 
 ```{r}
@@ -73,14 +76,12 @@ show_col(colourSet)
 ```
 
 ```{r}
-p <- ggplot(D, aes(x=x, y=y, color=group) ) +
+ggplot(D, aes(x=x, y=y, color=group) ) +
                   scale_color_manual(values=colourSet) +
                   geom_point(size=1, alpha=0.6) +
                   labs(title = "Set1") +
                   theme_classic() 
 
-
-print(p)
 ```
 
 ```{r}
@@ -115,13 +116,12 @@ colourSet
 show_col(colourSet)
 ```
 ```{r}
-p <- ggplot(D, aes(x=x, y=y, color=group) ) +
+ggplot(D, aes(x=x, y=y, color=group) ) +
                   scale_color_manual(values=colourSet) +
                   geom_point(size=1, alpha=0.8) +
                   labs(title = "Set3") +
                   theme_classic()  
 
-print(p)
 ```
 
 ```{r}
@@ -140,17 +140,13 @@ show_col(colourSet)
 ```
 
 ```{r}
-p <- ggplot(D, aes(x=x, y=y, color=group) ) +
+ggplot(D, aes(x=x, y=y, color=group) ) +
                   scale_color_manual(values=colourSet) +
                   geom_point(size=1, alpha=0.6) +
                   labs(title = "Set2_shuffling") +
                   theme_classic()  
 
-print(p)
 ```
 
 
-```{r}
-sessionInfo()
-```
 
