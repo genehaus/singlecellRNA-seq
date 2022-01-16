@@ -79,7 +79,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-#### 2-4. Make "cell_type" column of your Seurat object which would save the cell annotation <br>
+#### 2-4. Make "cell_type" column of your Seurat object which would save the cell annotation 
 #### and make the list of conditions ( different exp. condition or batch )
 
 
@@ -245,32 +245,32 @@ The goal is to generate pdf files which inclue all possible cellchat output for 
 
 			})
 	
-	dev.off() # close the pdf 
+		dev.off() # close the pdf 
+		
+		
+		try(saveRDS(cellchat, paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]],  ".cellcat.", DBs_col[sub_db], ".rds")))
+		
+		
+		pdf(paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]], ".cell.chat.summary.out_in_going.pdf"), width = 10, height = 10)
+        	        cellchat <- netAnalysis_computeCentrality(cellchat, slot.name = "netP")
+        	        try(ht1 <- netAnalysis_signalingRole_heatmap(cellchat, pattern = "outgoing"))
+        	        try(ht2 <- netAnalysis_signalingRole_heatmap(cellchat, pattern = "incoming"))
+        	        try(ht1 + ht2)
+        	dev.off()
+		
+		
+        	cell_types <- cellchat@meta$labels %>% unique() %>% as.character()
+        	cell_types_chr <- length(cell_types)
+		
+	        pdf(paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]], ".network.pdf"), width = cell_types_chr/2.5, height = 5.5)
+        	       for ( sub_cell_type in cell_types ){
+        	          try(print(netVisual_bubble(cellchat, sources.use = sub_cell_type, remove.isolate = FALSE)))
+        	          try(print(netVisual_bubble(cellchat, targets.use = sub_cell_type, remove.isolate = FALSE)))
+        	          }
+        	dev.off()
 	
 	
-	try(saveRDS(cellchat, paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]],  ".cellcat.", DBs_col[sub_db], ".rds")))
-
-
-	pdf(paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]], ".cell.chat.summary.out_in_going.pdf"), width = 10, height = 10)
-                cellchat <- netAnalysis_computeCentrality(cellchat, slot.name = "netP")
-                try(ht1 <- netAnalysis_signalingRole_heatmap(cellchat, pattern = "outgoing"))
-                try(ht2 <- netAnalysis_signalingRole_heatmap(cellchat, pattern = "incoming"))
-                try(ht1 + ht2)
-        dev.off()
-	
-	
-        cell_types <- cellchat@meta$labels %>% unique() %>% as.character()
-        cell_types_chr <- length(cell_types)
-	
-        pdf(paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]], ".network.pdf"), width = cell_types_chr/2.5, height = 5.5)
-               for ( sub_cell_type in cell_types ){
-                  try(print(netVisual_bubble(cellchat, sources.use = sub_cell_type, remove.isolate = FALSE)))
-                  try(print(netVisual_bubble(cellchat, targets.use = sub_cell_type, remove.isolate = FALSE)))
-                  }
-        dev.off()
-	
-	
-	}}
+		}}
 
 	 
 
