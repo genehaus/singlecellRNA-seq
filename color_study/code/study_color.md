@@ -1,6 +1,6 @@
 # To study colors
 
-from colorRampPalette
+About "Accent", "Set1", "Set2" and "Set3" of colorRampPalette
 
 ``` r
 require(dplyr)
@@ -36,6 +36,14 @@ head(D)
     ## 5 -6.080631   1.4217436     A
     ## 6  2.860372  14.6534634     A
 
+
+
+
+<br>
+To use "Accent" color set
+<br>
+
+
 ``` r
 getPalette = colorRampPalette(brewer.pal(8, "Accent")) 
 
@@ -63,7 +71,16 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 ![](README_figs/README-unnamed-chunk-6-1.png)<!-- -->
 
+
+
+
+<br>
+To use "Set1" color set
+<br>
+
+
 ``` r
+# "Set1" color set
 getPalette = colorRampPalette(brewer.pal(8, "Set1")) 
 
 group <- factor(D$group, levels=sort(unique(D$group)))
@@ -89,6 +106,14 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 ```
 
 ![](README_figs/README-unnamed-chunk-9-1.png)<!-- -->
+
+
+
+
+<br>
+To use "Set2" color set
+<br>
+
 
 ``` r
 getPalette = colorRampPalette(brewer.pal(8, "Set2")) 
@@ -119,6 +144,14 @@ print(p)
 
 ![](README_figs/README-unnamed-chunk-12-1.png)<!-- -->
 
+
+
+
+<br>
+To use "Set3" color set
+<br> 
+
+
 ``` r
 getPalette = colorRampPalette(brewer.pal(8, "Set3")) 
 
@@ -146,8 +179,12 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 ![](README_figs/README-unnamed-chunk-15-1.png)<!-- -->
 
+
+<br>
+To use shuffled "Set2" color set 
+<br> 
+
 ``` r
-# Shuffle colors of set2
 getPalette = colorRampPalette(brewer.pal(8, "Set2")) 
 L <- sort(unique(D$group))
 L <- L[sample(1:length(L))]
