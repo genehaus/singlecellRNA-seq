@@ -154,6 +154,8 @@ The goal is to generate pdf files which inclue all possible cellchat output for 
 		# cellchat starts 
 		
 	          # Part I: Data input & processing and initialization of CellChat object
+		
+		
 	          data.input = S[[assay_name]]@data %>% as.matrix() # normalized data matrix
 	          colnames(meta_dat) <- c("Cell","labels")
 	          meta <- meta_dat %>% as.data.frame()
@@ -164,7 +166,7 @@ The goal is to generate pdf files which inclue all possible cellchat output for 
         	  cellchat <- setIdent(cellchat, ident.use = "labels")
         	  groupSize <- as.numeric(table(cellchat@idents))
 		
-	
+		
 		  for ( sub_db in c(1:length(DBs_col)) ) {
 	
 	                # Set the ligand-receptor interaction database
@@ -215,7 +217,8 @@ The goal is to generate pdf files which inclue all possible cellchat output for 
 		
 		
                 	# Part III: Visualization of cell-cell communication network
-			
+		
+				
                 	try(num_ver_receiver <- meta$labels %>% unique() %>% length())
                 	try(num_ver_receiver_half <- round(num_ver_receiver/2))
                 	try(
