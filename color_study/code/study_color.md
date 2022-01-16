@@ -40,7 +40,7 @@ head(D)
 
 
 <br><br><br>
-###To use "Accent" color set 
+### 1. To use "Accent" color set 
 <br>
 
 
@@ -76,7 +76,7 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 <br><br><br>
-###To use "Set1" color set
+### 2. To use "Set1" color set
 <br>
 
 
@@ -112,7 +112,7 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 <br><br><br>
-###To use "Set2" color set 
+### 3. To use "Set2" color set 
 <br>
 
 ``` r
@@ -148,7 +148,7 @@ print(p)
 
 
 <br><br><br>
-###To use "Set3" color set
+### 4. To use "Set3" color set
 <br>
 
 ``` r
@@ -182,7 +182,7 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 <br><br><br>
-###To use the shuffled "Set2" color set 
+### 5. To use the shuffled "Set2" color set 
 <br>
 
 ``` r
