@@ -40,7 +40,8 @@ This analysis is based on the data from mice.
 Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/master/tutorial/CellChat-vignette.html
 
 
-	#### 2-1. Make output directories
+	<h3>  2-1. Make output directories </h3>
+
 
 	
 	```
