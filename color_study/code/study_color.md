@@ -1,6 +1,6 @@
-# color study
-================
-author: Hyojin Kim
+# To study colors
+
+from colorRampPalette
 
 ``` r
 require(dplyr)
@@ -175,3 +175,8 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 ```
 
 ![](README_figs/README-unnamed-chunk-18-1.png)<!-- -->
+
+
+
+
+
