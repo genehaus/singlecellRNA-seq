@@ -1,8 +1,3 @@
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  fig.path = "code_fig/README-"
-)
-```
 
 
 ---
