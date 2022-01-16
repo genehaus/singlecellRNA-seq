@@ -7,7 +7,7 @@
 from Seurat object to cellchat <br>  
 This analysis is based on the data from mice.
 
-1. Call libraries <br> 
+### 1. Call libraries <br> 
 
 	
 	```
@@ -36,11 +36,11 @@ This analysis is based on the data from mice.
 	
 	
 
-2. Analyse scRNA-seq data from a single sample/condition/batch <br> 
+### 2. Analyse scRNA-seq data from a single sample/condition/batch <br> 
 Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/master/tutorial/CellChat-vignette.html
 
 
-	2-1. Make output directories
+	#### 2-1. Make output directories
 
 	
 	```
@@ -56,7 +56,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 	
 
-	2-2. Read RDS data 
+	#### 2-2. Read RDS data 
 
 
 	```
@@ -66,7 +66,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 
 
-	2-3. Make some list
+	#### 2-3. Make some list
 
 	
 	```
@@ -75,7 +75,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 		
 	
-	2-4. Make "cell_type" column of your Seurat object which would save the cell annotation <br>
+	#### 2-4. Make "cell_type" column of your Seurat object which would save the cell annotation <br>
 	and make the list of conditions ( different exp. condition or batch )
 	
 
@@ -95,7 +95,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 
 
-	2-5. Simplify conditions' name
+	#### 2-5. Simplify conditions' name
 
 
 	```
@@ -113,7 +113,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-	2-6. Subset R object based on the condition 
+	#### 2-6. Subset R object based on the condition 
 	
 
 	```
@@ -125,7 +125,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 
 
-	2-7. Run CellChat 
+	#### 2-7. Run CellChat 
 
 
 	The goal is to generate pdf files which inclue all possible cellchat output for each cell type and each pathway in a given database of cellchat
@@ -273,10 +273,10 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-5. acknowledgement
+### 3. acknowledgement
 
 	
-	5-2. website
+	#### 3-1. website
 	
 	https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/master/tutorial/CellChat-vignette.html
 
@@ -288,7 +288,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-6. SessionInfo
+### 6. SessionInfo
 
 
 
