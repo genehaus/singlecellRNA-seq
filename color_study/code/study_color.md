@@ -1,4 +1,4 @@
-# To study colors
+# To study colors by H.J.Kim
 
 <h3> About "Accent", "Set1", "Set2" and "Set3" of colorRampPalette </h3>
 

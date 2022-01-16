@@ -1,4 +1,4 @@
-# single cell RNA seq data analysis <br> to study intercellular communications with cellchat <br> Written by Hyojin Kim <br>  In Jan 2022
+# single cell RNA seq data analysis <br> to study intercellular communications with cellchat <br> Written by H.J. Kim <br>  In Jan 2022
 
 <br>
 <br>
