@@ -43,7 +43,6 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 ### 2-1. Make output directories
 
 
-
 	```
 	setwd("./") 
 	
@@ -55,9 +54,9 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	if(!dir.exists(OUTDIR_common)) dir.create(OUTDIR_common)
 	OUTDIR %>% lapply(., function(x) if(!dir.exists(x)) dir.create(x))
 	```
-	
 
-	#### 2-2. Read RDS data 
+
+#### 2-2. Read RDS data 
 
 
 	```
@@ -67,18 +66,18 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 
 
-	#### 2-3. Make some list
+#### 2-3. Make some list
 
-	
+
 	```
 	DBs_col <- c("Secreted Signaling","ECM-Receptor","Cell-Cell Contact")
 	remove_celltype = c("Leukocytes", "Adipocytes") # if nothing to remove, just type "nothing"
 	```
-		
-	
-	#### 2-4. Make "cell_type" column of your Seurat object which would save the cell annotation <br>
-	and make the list of conditions ( different exp. condition or batch )
-	
+
+
+#### 2-4. Make "cell_type" column of your Seurat object which would save the cell annotation <br>
+and make the list of conditions ( different exp. condition or batch )
+
 
 	```
 	# if your data is coming from scanpy 
@@ -96,7 +95,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 
 
-	#### 2-5. Simplify conditions' name
+#### 2-5. Simplify conditions' name
 
 
 	```
@@ -110,12 +109,11 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	> conditions_SS
 	[1] "A.H." "A.D." "D.H." "D.D."
 	```
-	
 
 
 
-	#### 2-6. Subset R object based on the condition 
-	
+#### 2-6. Subset R object based on the condition 
+
 
 	```
 	rds_col <- c()
@@ -126,10 +124,12 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	```
 
 
-	#### 2-7. Run CellChat 
+#### 2-7. Run CellChat 
 
 
-	The goal is to generate pdf files which inclue all possible cellchat output for each cell type and each pathway in a given database of cellchat
+The goal is to generate pdf files which inclue all possible cellchat output for each cell type and each pathway in a given database of cellchat
+
+
 
 	```
 	for ( i in c(1:length(rds_col))) {
