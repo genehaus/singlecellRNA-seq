@@ -118,9 +118,9 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 	```
 	rds_col <- c()
-	for ( condition in c(conditions)) {
+	for ( condition_a in c(conditions)) {
         	R <- R[,!R$cell_type %in% remove_celltype ]
-        	rds_col[[condition]] <- subset(R, condition == condition )
+        	rds_col[[condition_a]] <- subset(R, condition == condition_a )
 	}
 	```
 
