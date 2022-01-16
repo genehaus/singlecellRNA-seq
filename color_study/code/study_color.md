@@ -39,8 +39,8 @@ head(D)
 
 
 
-<br>
-To use "Accent" color set
+<br><br><br>
+<h5>To use "Accent" color set </h5>
 <br>
 
 
@@ -74,8 +74,9 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 
-<br>
-To use "Set1" color set
+
+<br><br><br>
+<h5>To use "Set1" color set </h5>
 <br>
 
 
@@ -110,10 +111,9 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 
 
 
+<br><br><br>
+<h5>To use "Set2" color set </h5>
 <br>
-To use "Set2" color set
-<br>
-
 
 ``` r
 getPalette = colorRampPalette(brewer.pal(8, "Set2")) 
@@ -147,10 +147,9 @@ print(p)
 
 
 
+<br><br><br>
+<h5>To use "Set3" color set </h5>
 <br>
-To use "Set3" color set
-<br> 
-
 
 ``` r
 getPalette = colorRampPalette(brewer.pal(8, "Set3")) 
@@ -180,9 +179,11 @@ ggplot(D, aes(x=x, y=y, color=group) ) +
 ![](README_figs/README-unnamed-chunk-15-1.png)<!-- -->
 
 
+
+
+<br><br><br>
+<h5>To use the shuffled "Set2" color set </h5>
 <br>
-To use shuffled "Set2" color set 
-<br> 
 
 ``` r
 getPalette = colorRampPalette(brewer.pal(8, "Set2")) 
