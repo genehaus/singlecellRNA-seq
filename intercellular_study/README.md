@@ -227,7 +227,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
                         try(print (path_legnth))
                         try(LR.show <- pairLR.path[,])
                         for ( sub_LR in LR.show ) {
-                            try(netVisual_individual(cellchat, signaling = pathways.show,  pairLR.use = sub_LR , vertex.receiver = vertex.receiver))
+                            try(netVisual_individual(cellchat, signaling = pathways.show, pairLR.use = sub_LR, layout = "hierarchy", vertex.receiver = vertex.receiver))
                             try(netVisual_individual(cellchat, signaling = pathways.show, pairLR.use = sub_LR, layout = "circle"))
                             try(netVisual_individual(cellchat, signaling = pathways.show, pairLR.use = sub_LR, layout = "chord"))
 
