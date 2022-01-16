@@ -40,18 +40,18 @@ This analysis is based on the data from mice.
 Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/master/tutorial/CellChat-vignette.html
 
 
-	<h3>2-1. Make output directories</h3><br>
+### 2-1. Make output directories
 
 
 
 	```
 	setwd("./") 
-
+	
 	OUTDIR_common <- "./cellchat_results/"
 	OUTDIR <- c("./cellchat_results/Secreted_Signaling/",
 	            "./cellchat_results/ECM-Receptor/",
 	            "./cellchat_results/Cell-Cell_Contact/" )
-
+	
 	if(!dir.exists(OUTDIR_common)) dir.create(OUTDIR_common)
 	OUTDIR %>% lapply(., function(x) if(!dir.exists(x)) dir.create(x))
 	```
