@@ -290,8 +290,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
                         	try( netVisual_individual(obj.L[[stim]], signaling = sub_pathways.show, layout = "hierarchy", pairLR.use = LR.show_10, vertex.receiver = vertex.receiver))
 
                         	}
-        	 dev.off()
-       		 }
+	        	 dev.off() # close 3rd pdf
+       		 } # close for loop
 		
 		
 		
@@ -355,9 +355,9 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 		
 		
 		
-		dev.off()
+		dev.off() # close 4th pdf 
 
-		}
+	} # close the top level for loop
 
 
 
