@@ -85,6 +85,9 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
+	R$cell_type <- R$column_name_save_cell_annotation 
+	R$condition <- R$column_name_save_group_information
+	
 	# R[[]] %>% head() 
 	# - + - + - + - + - + - + - + - + - + - + - + - #
 	# rownames  # cell_type # condition # ... # ... # 
