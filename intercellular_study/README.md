@@ -97,17 +97,14 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 	# if your data is coming from scanpy 
-	R$cell_type <- R$olumn_save_cell_annotation
 	R$cell_type <- R$cell_type %>% as.character() %>% strsplit(., "[: ]") %>% lapply(., function(x) x[3]) %>% unlist()
-	# if your data is coming from Seurat
-	R$cell_type <- R$column_save_cell_annotation
 	
 	# In the case of the DefaultAssay, 
 	# "RNA" from Seurat object is ideal ("originalexp" from Scanpy)
 	# Please do not use the one from integrated assay
 	assay_name <- DefaultAssay(R)
 	 
-	# 'condition' column hss the exp. condition information in this R object
+	# 'condition' column has the exp. condition information in this R object
 	conditions <- R$condition %>% unique() %>% as.character() %>% mixedsort()
 
 
@@ -116,16 +113,18 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 #### 2-5. Simplify conditions' name
 
 
-
+	# option 1 
 	conditions %>% str_extract_all(., "\\b[A-Za-z]+") %>% toupper() %>% str_extract_all(., "\\b[A-Za-z]") -> conditions_S1
 	conditions %>% str_extract_all(., "[A-Za-z]+\\b") %>% toupper() %>% str_extract_all(., "\\b[A-Za-z]") -> conditions_S2
 	conditions_SS <- paste0(conditions_S1, ".", conditions_S2)
 	
 	#> conditions
-	#[1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE""
+	#[1] "ABC_CELL_HEALTHY"  "ABC_CELL_DISEASE" "DEF_CELL_HEALTHY" "DEF_CELL_DISEASE"
 	#> conditions_SS
 	#[1] "A.H." "A.D." "D.H." "D.D."
-
+	
+	# option 2 (typing by manual)
+	conditions_SS <- c("A.H.", "A.D.", "D.H.", "D.D.")
 
 
 
