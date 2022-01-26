@@ -377,7 +377,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-### 6. SessionInfo
+### SessionInfo
 
 
 
