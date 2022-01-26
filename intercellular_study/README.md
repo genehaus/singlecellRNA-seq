@@ -79,8 +79,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-#### 2-4. Make "cell_type" column of meta of your Seurat object to save the cell annotation 
-#### and make the list of conditions ( different exp. condition or batch )
+#### 2-4. Make "cell_type" column of meta of your Seurat object in order to include the cell annotation 
+####      and "condition" for saving batch or disease of interest you want to divide when running cellchat)
 
 
 
@@ -96,7 +96,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 	# if your data is coming from scanpy 
-	R$cell_type <- R$olumn_save_cell_annotation %>% as.character() %>% strsplit(., "[: ]") %>% lapply(., function(x) x[3]) %>% unlist()
+	R$cell_type <- R$olumn_save_cell_annotation
+	R$cell_type <- R$cell_type %>% as.character() %>% strsplit(., "[: ]") %>% lapply(., function(x) x[3]) %>% unlist()
 	# if your data is coming from Seurat
 	R$cell_type <- R$column_save_cell_annotation
 	
@@ -144,7 +145,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 #### 2-7. Run CellChat 
 
 
-The goal is to generate pdf files which inclue all possible cellchat output for each cell type and each pathway in a given database of cellchat
+The goal is to generate pdf files which inclue all possible cellchat output for each cell type and each pathway in a given condition and database of cellchat
 
 
 
