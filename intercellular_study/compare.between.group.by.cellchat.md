@@ -82,8 +82,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 #### 2-3. Run cellchat 
 
 
-	# for each "for loop" 
-	# I plan to call 2 rds together to compare between 2 rds in the list of "L_match" 
+	# for each "loop" 
+	# I plan to call 2 rds together to compare between those 2 rds in the list of "L_match" 
 	# So, I set up the call_numbers with odd numbers  
 	call_numbers <- c(1,3,5) 
 
@@ -208,7 +208,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
                 	}
                 	)}
 		
-        	dev.off()		
+        	dev.off() # close the 2nd pdf 
 		
 		
 		
@@ -237,7 +237,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
                 		}
                 	)}
 		
-        	dev.off()
+        	dev.off() # close the II version of 2nd pdf 
 		
 		
 		
@@ -291,7 +291,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
                         	}
 	        	 dev.off() # close 3rd pdf
-       		 } # close for loop
+       		 } # close for the close "for loop"
 		
 		
 		
@@ -353,11 +353,9 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	        ))
 		
 		
-		
-		
 		dev.off() # close 4th pdf 
 
-	} # close the top level for loop
+	} # close the top-level for loop
 
 
 
