@@ -79,8 +79,9 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-#### 2-4. Make "cell_type" column of meta of your Seurat object in order to include the cell annotation 
-####      and "condition" for saving batch or disease of interest you want to divide when running cellchat)
+#### 2-4. 
+#### Make "cell_type" column of meta of your Seurat object in order to include the cell annotation 
+#### and "condition" for saving batch or disease of interest you want to divide when running cellchat)
 
 
 
