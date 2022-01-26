@@ -106,6 +106,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	# "RNA" from Seurat object is ideal ("originalexp" from Scanpy)
 	# Please do not use the one from integrated assay
 	assay_name <- DefaultAssay(R)
+
+	print (assay_name) # to check if the assay is "RNA" or "originalexp"
 	 
 	# 'condition' column has the exp. condition information in this R object
 	conditions <- R$condition %>% unique() %>% as.character() %>% mixedsort()
