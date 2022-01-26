@@ -265,13 +265,6 @@ The goal is to generate pdf files which inclue all possible cellchat output for 
 		try(saveRDS(cellchat, paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]],  ".cellcat.", DBs_col[sub_db], ".rds")))
 		
 		
-		pdf(paste0(OUTDIR[sub_db], Project(S), ".", conditions[[i]], ".cell.chat.summary.out_in_going.pdf"), width = 10, height = 10)
-        	        cellchat <- netAnalysis_computeCentrality(cellchat, slot.name = "netP")
-        	        try(ht1 <- netAnalysis_signalingRole_heatmap(cellchat, pattern = "outgoing"))
-        	        try(ht2 <- netAnalysis_signalingRole_heatmap(cellchat, pattern = "incoming"))
-        	        try(ht1 + ht2)
-        	dev.off()
-		
 		
         	cell_types <- cellchat@meta$labels %>% unique() %>% as.character()
         	cell_types_chr <- length(cell_types)
