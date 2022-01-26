@@ -79,10 +79,20 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 
-#### 2-4. Make "cell_type" column of your Seurat object which would save the cell annotation 
+#### 2-4. Make "cell_type" column of meta of your Seurat object to save the cell annotation 
 #### and make the list of conditions ( different exp. condition or batch )
 
 
+
+	# R[[]] %>% head() 
+	# - + - + - + - + - + - + - + - + - + - + - + - #
+	# rownames  # cell_type # condition # ... # ... # 
+	# - + - + - + - + - + - + - + - + - + - + - + - #
+	# AAACCCA.. # T cell    # disease   # ... # ... #
+	# AAACCCG.. # T cell    # disease   # ... # ... #
+	# AAACCCT.. # B cell    # disease   # ... # ... #
+	# AAACCCC.. # B cell    # normal    # ... # ... #
+	# ........  # T cell    # normal    # ... # ... #
 
 
 	# if your data is coming from scanpy 
@@ -91,8 +101,8 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	R$cell_type <- R$column_save_cell_annotation
 	
 	# In the case of the DefaultAssay, 
-	# "RNA" from Seurat object is ideal ("originexp" from Scanpy)
-	# It shouldn't be the one from integrated assay
+	# "RNA" from Seurat object is ideal ("originalexp" from Scanpy)
+	# Please do not use the one from integrated assay
 	assay_name <- DefaultAssay(R)
 	 
 	# 'condition' column hss the exp. condition information in this R object
