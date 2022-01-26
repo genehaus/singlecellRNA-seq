@@ -4,7 +4,8 @@
 <br>
 
 
-from Seurat object to cellchat <br>  
+Next step to README.md <br> 
+To compare cellchat outputs between groups <br>  
 This analysis is based on the data from mice.
 
 ### 1. Call libraries <br> 
