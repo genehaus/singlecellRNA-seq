@@ -26,7 +26,6 @@ This analysis is based on the data from mice.
 	library(tibble)
 	library(purrr)
 	library(phateR)
-	library(viridis)
 	library(ggrepel)
 	library(CellChat)
 	library(patchwork)
