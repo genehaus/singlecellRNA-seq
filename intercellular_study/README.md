@@ -74,8 +74,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 
 
 	DBs_col <- c("Secreted Signaling","ECM-Receptor","Cell-Cell Contact")
-	remove_celltype = c("Leukocytes", "Adipocytes") # if nothing to remove, just type "nothing"
-
+	remove_celltype = c("Leukocytes", "Adipocytes") # if nothing to remove, just type "nothing" : remove_celltype = c("nothing")
 
 
 
