@@ -1,4 +1,4 @@
-# single cell RNA seq data analysis II (for comparison between groups)  <br> to study intercellular communications with cellchat <br> Written by H.J. Kim <br>  In Jan 2022
+# single cell RNA seq data analysis  <br> to study intercellular communications II with cellchat <br> (for comparison between groups) <br> Written by H.J. Kim <br>  In Jan 2022
 
 <br>
 <br>
