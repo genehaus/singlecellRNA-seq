@@ -127,6 +127,7 @@ Ref: https://htmlpreview.github.io/?https://github.com/sqjin/CellChat/blob/maste
 	#[1] "A.H." "A.D." "D.H." "D.D."
 	
 	# option 2 (typing by manual)
+	# it should be the same number of the conditions in 2-4.
 	conditions_SS <- c("A.H.", "A.D.", "D.H.", "D.D.")
 
 
