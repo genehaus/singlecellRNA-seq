@@ -184,9 +184,9 @@ The goal is to generate pdf files which inclue all possible cellchat output for 
 		  for ( sub_db in c(1:length(DBs_col)) ) {
 	
 	                # Set the ligand-receptor interaction database
-	                CellChatDB <- CellChatDB.mouse
+	                CellChatDB <- CellChatDB.mouse # if human, type CellChatDB.human
 	                CellChatDB.use <- subsetDB(CellChatDB, search = DBs_col[sub_db] ) # [1] annotation =="Secreted Signaling" "ECM-Receptor"       "Cell-Cell Contact" 
-		                cellchat@DB <- CellChatDB.use
+		        cellchat@DB <- CellChatDB.use
 	
 	                # Preprocessing the expression data for cell-cell communication analysis
 	                cellchat <- subsetData(cellchat) # subset the expression data of signaling genes for saving computation cost
