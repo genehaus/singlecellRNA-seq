@@ -11,10 +11,13 @@ Based on mice data
 
 
 	## To install 
+	## -------------------------------- ##
 	pip install velocyto -u
 	conda install -c conda-forge loompy
 	
+		
 	## In command line 
+	## -------------------------------- ##
 	#!/usr/../bin/zsh
 	#SBATCH -J velocyto
 	#SBATCH -t 100:00:00
@@ -32,12 +35,15 @@ Based on mice data
 
 
 	## In "combine.loom.py"
+	## -------------------------------- ##
 	import os,sys
 	import loompy
 	# # usage: script.py file1.loom file2.loom file3.loom merged.loom
 	loompy.combine(sys.argv[1:-1], sys.argv[-1])
 	
+	
 	## In "combine.loom.sh"
+	## -------------------------------- ##
 	#!/usr/../bin/zsh
 	#SBATCH -J velocyto
 	#SBATCH -t 100:00:00
