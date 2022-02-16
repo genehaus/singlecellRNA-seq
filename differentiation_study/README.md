@@ -23,8 +23,8 @@ Based on mice data
 	
 	/home/.../.pyenv/shims/velocyto run10x -m /../mm10_repeats_repeatMasker_allTracks.gtf /../SAMPLE_NAME /../refdata-cellranger-mm10-3.0.0/genes/genes.gtf --samtools-threads 20
 	
-	## "SAMPLE_NAME" has the outputs from CellRanger, for example, _cmdline, _finalstate, outs, ...   
-	## "*.loom" will be made in a new directory "velocyto" inside the "SAMPLE_NAME"	
+	## "SAMPLE_NAME" is the folder which has the outputs from CellRanger, for example, _cmdline, _finalstate, outs, ...   
+	## "*.loom" will be made in a new directory "velocyto" inside the folder "SAMPLE_NAME"	
 	## For the mm10_repeats_repeatMasker_allTracks.gtf, I refer to this https://www.biostars.org/p/416125/
 
 
