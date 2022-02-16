@@ -4,7 +4,7 @@
 <br>
 
 
-from *.BAM to *.loom <br>  
+from *.BAM to *.loom  
 Based on mice data 
 
 ### 1. To use velocyto  <br> 
@@ -63,6 +63,7 @@ Based on mice data
 
 
 	## In Slurm 
+	## -------------------------------- ##
 	sbatch combine.loom.sh
 
 
