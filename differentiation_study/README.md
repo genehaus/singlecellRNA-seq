@@ -1,12 +1,12 @@
 # Differentiation analysis on single cell RNA-seq data  <br> 
 [1] to prepare data using velocyto for running scvelo <br> 
 [2] to analyse data using slingshot, monocle <br> 
-Written by H.J. Kim <br>  In Nov 2022
+In Nov 2022
 
 <br>
 <br>
 
-[1] to prepare data using velocyto for running scvelo <br>
+##[1] to prepare data using velocyto for running scvelo <br>
 from *.BAM to *.loom based on mice data 
 
 ### 1. To use velocyto  <br> 
@@ -69,8 +69,9 @@ from *.BAM to *.loom based on mice data
 
 
 
-[2] to analyse data using slingshot, monocle <br> 
-
+## [2] to analyse data using slingshot, monocle <br> 
+./code/phate_slingshot_monocle.R <br>
+https://github.com/genehaus/singlecellRNA-seq_2022/blob/main/differentiation_study/code/phate_slingshot_monocle.R
 
 
 
