@@ -1,11 +1,13 @@
-# single cell RNA seq data analysis <br> to study differentiation study with velocyto, scvelo <br> Written by H.J. Kim <br>  In Feb 2022
+# Differentiation analysis on single cell RNA-seq data  <br> 
+[1] to prepare data using velocyto for running scvelo <br> 
+[2] to analyse data using slingshot, monocle <br> 
+Written by H.J. Kim <br>  In Nov 2022
 
 <br>
 <br>
 
-
-from *.BAM to *.loom  
-Based on mice data 
+[1] to prepare data using velocyto for running scvelo <br>
+from *.BAM to *.loom based on mice data 
 
 ### 1. To use velocyto  <br> 
 
@@ -64,6 +66,11 @@ Based on mice data
 	## In Slurm 
 	## -------------------------------- ##
 	sbatch combine.loom.sh
+
+
+
+[2] to analyse data using slingshot, monocle <br> 
+
 
 
 
