@@ -6,10 +6,10 @@ In Nov 2022
 <br>
 <br>
 
-##[1] to prepare data using velocyto for running scvelo <br>
+## [1] to prepare data using velocyto for running scvelo <br>
 from *.BAM to *.loom based on mice data 
 
-### 1. To use velocyto  <br> 
+### [1]-1. To use velocyto  <br> 
 
 
 	## To install 
@@ -33,7 +33,7 @@ from *.BAM to *.loom based on mice data
 	## For the mm10_repeats_repeatMasker_allTracks.gtf, I refer to this https://www.biostars.org/p/416125/
 
 
-### 2. To combine loom  <br> 
+### [1]-2. To combine loom  <br> 
 
 
 	## In "combine.loom.py"
@@ -60,7 +60,7 @@ from *.BAM to *.loom based on mice data
 	
 
 
-### 3. To run  <br>
+### [1]-3. To run  <br>
 
 
 	## In Slurm 
@@ -69,7 +69,7 @@ from *.BAM to *.loom based on mice data
 
 
 
-## [2] to analyse data using slingshot, monocle <br> 
+## [2] to analyse data using phate, slingshot, monocle <br> 
 ./code/phate_slingshot_monocle.R <br>
 https://github.com/genehaus/singlecellRNA-seq_2022/blob/main/differentiation_study/code/phate_slingshot_monocle.R
 
