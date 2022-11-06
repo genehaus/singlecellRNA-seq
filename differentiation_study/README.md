@@ -3,8 +3,6 @@
 [2] to analyse data using slingshot, monocle <br> 
 In Nov 2022
 
-<br>
-<br>
 
 ## [1] to prepare data using velocyto for running scvelo <br>
 from *.BAM to *.loom based on mice data 
