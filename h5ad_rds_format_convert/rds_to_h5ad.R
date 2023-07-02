@@ -2,6 +2,12 @@
 ## written by Hyojin Kim 
 ## March 2022
 
+## R version 4.1.0 (2021-05-18)
+## Seurat version 4.3.0
+## SingleCellExperiment version 1.16.0
+## zellkonverter version 1.4.0
+## ggplot2 version 3.4.2
+
 library(Seurat)
 library(dplyr)
 library(ggplot2)
